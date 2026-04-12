@@ -216,11 +216,42 @@ config.filtersDOM.addEventListener('uiChange', () => {
     }
 });
 
+const loadingStateAnimation = (loadingState, elements) => {
+    if (loadingState) {
+        elements.forEach(element => {
+            element.classList.add('loading');
+            const loadingAnimation = document.createElement('div');
+            const loadingAnimationDot1 = document.createElement('div');
+            const loadingAnimationDot2 = document.createElement('div');
+            const loadingAnimationDot3 = document.createElement('div');
+
+            loadingAnimation.classList.add('loading__animation');
+            loadingAnimationDot1.classList.add('loading__dot');
+            loadingAnimationDot2.classList.add('loading__dot');
+            loadingAnimationDot3.classList.add('loading__dot');
+            
+            loadingAnimation.appendChild(loadingAnimationDot1);
+            loadingAnimation.appendChild(loadingAnimationDot2);
+            loadingAnimation.appendChild(loadingAnimationDot3);
+            element.appendChild(loadingAnimation);
+        });
+    } else {
+        elements.forEach(element => {
+            element.classList.remove('loading');
+            element.querySelectorAll('.loading__animation').forEach(loadingAnimation => {
+                loadingAnimation.remove();
+            });
+        });
+    }
+};
+
+loadingStateAnimation(true, [config.listingDOM, config.filtersDOM]);
 loadData().then(data => {
     posts = data;
 
     renderFilters(data);
     renderListingItems(data, currentFilters);
+    loadingStateAnimation(false, [config.listingDOM, config.filtersDOM]);
 }).catch(err => {
     console.error(err);
 });
