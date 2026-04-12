@@ -92,7 +92,7 @@ const renderFilters = (listingItems) => {
 };
 
 const renderPagination = () => {
-    config.paginationDOM?.innerHTML = '';
+    config.paginationDOM.innerHTML = '';
 
     const numberOfPages = Math.ceil(filteredPosts.length / config.postsPerPage);
 
