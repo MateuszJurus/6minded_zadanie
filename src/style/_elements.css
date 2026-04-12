@@ -176,6 +176,18 @@
     }
 }
 
+.noresoults {
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--font-family-secondary);
+    font-size: 22px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+}
+
 .loading__animation {
     position: absolute;
     display: flex;
