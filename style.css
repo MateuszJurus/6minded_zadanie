@@ -1,0 +1,11 @@
+@import "./src/style/_reset.css";
+@import "./src/style/_variables.css";
+@import "./src/style/_typography.css";
+@import "./src/style/_layout.css";
+@import "./src/style/_elements.css";
+@import "./src/style/_buttons.css";
+
+body {
+    background-color: var(--color-primary--light);
+    color: var(--color-text);
+}

@@ -1,0 +1,45 @@
+.section {
+    max-width: 1528px;
+    padding: 80px 20px 100px;
+    margin-inline: auto;
+}
+
+.filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    .filters__dropdowns {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+    }
+
+    .filters__pills {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+    }
+}
+
+.listing {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+
+    .listing__column {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        width: calc(100% / 3);
+    }
+}
+
+.loading {
+    & > *:not(.loading__animation) {
+    position: relative;
+    opacity: .5;
+    pointer-events: none;
+    }
+}

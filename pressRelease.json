@@ -1,0 +1,132 @@
+[
+    {
+        "id": 1,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2026-11-27T13:23:00Z",
+        "category": "regulatory",
+        "type": "Type 1",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 2,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2025-11-26T14:23:00Z",
+        "category": "non_regulatory",
+        "type": "Type 2",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 3,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2025-11-26T13:43:00Z",
+        "category": "regulatory",
+        "type": "Type 3",
+        "imageUrl": "src/assets/img1.png",
+        "url": "www.google.com"
+    },
+    {
+        "id": 4,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2025-11-25T11:23:00Z",
+        "category": "regulatory",
+        "type": "Type 4",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 5,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2025-11-25T13:42:00Z",
+        "category": "regulatory",
+        "type": "Type 1",
+        "imageUrl": "src/assets/img2.png",
+        "url": "www.google.com"
+    },
+    {
+        "id": 6,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2025-11-25T18:13:00Z",
+        "category": "regulatory",
+        "type": "Type 2",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 7,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2024-11-24T13:23:00Z",
+        "category": "regulatory",
+        "type": "Type 3",
+        "imageUrl": "src/assets/img3.png",
+        "url": "www.google.com"
+    },
+    {
+        "id": 8,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2024-11-24T14:23:00Z",
+        "category": "non_regulatory",
+        "type": "Type 4",
+        "imageUrl": "src/assets/img4.png",
+        "url": "www.google.com"
+    },
+    {
+        "id": 9,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2024-11-24T23:23:00Z",
+        "category": "non_regulatory",
+        "type": "Type 1",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 10,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2024-11-22T13:23:00Z",
+        "category": "regulatory",
+        "type": "Type 2",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 11,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2023-11-21T11:23:00Z",
+        "category": "regulatory",
+        "type": "Type 3",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 12,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2023-11-21T13:23:00Z",
+        "category": "non_regulatory",
+        "type": "Type 4",
+        "imageUrl": "",
+        "url": "www.google.com"
+    },
+    {
+        "id": 13,
+        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum, justo sed suscipit fringilla, diam dui lobortis mauris, eget vulputate erat tellus a purus. ",
+        "excerpt": "Cras iaculis quis ipsum non feugiat. Donec porttitor erat nulla, non interdum orci aliquam nec. Phasellus id eros leo.",
+        "publishedAt": "2023-11-22T13:23:00Z",
+        "category": "regulatory",
+        "type": "Type 1",
+        "imageUrl": "",
+        "url": "www.google.com"
+    }
+]

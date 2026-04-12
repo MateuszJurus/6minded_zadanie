@@ -1,0 +1,16 @@
+:root {
+    /* Colors */
+    --color-primary: #2554F0;
+    --color-primary--light: #F5F8FF;
+    --color-primary--semi: #EFF3FF;
+    --color-gray: #E0E0E0;
+    --color-white: #FFFFFF;
+    --color-text: #070C1E; 
+    --color-cornflower: rgba(37, 84, 240, 0.5);
+    --color-cornflower-hover: rgba(37, 84, 240, 0.08);
+    --color-gray-ui: rgba(7, 12, 30, 0.08);
+
+    /* Typography */
+    --font-family-primary: 'Manrope', sans-serif;
+    --font-family-secondary: 'Nunito', sans-serif;
+}

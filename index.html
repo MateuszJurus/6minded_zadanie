@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site - News listing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..600&family=Nunito:wght@400..600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <h1 class="header header--h1">News</h1>
+        <div class="filters filters--loading" data-js="filters">
+            <div class="filters__pills" data-js="pills">
+                <button class="pill pill--active" data-js="pill" data-filter="all">All news</button>
+            </div>
+            <div class="filters__dropdowns" data-js="dropdowns">
+                <div class="dropdown">
+                    <div class="dropdown__placeholder" data-js="dropdown-placeholder">Filter by type<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.800049 0.800003L6.4569 6.45686L12.1138 0.800003" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+                    <div class="dropdown__options" data-js="dropdown-options" data-dropdown="type"></div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown__placeholder" data-js="dropdown-placeholder">Filter by year<svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.800049 0.800003L6.4569 6.45686L12.1138 0.800003" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+                    <div class="dropdown__options" data-js="dropdown-options" data-dropdown="year"></div>
+                </div>
+            </div>
+        </div>
+        <div class="listing" data-js="listing">
+            <div class="listing__column" data-js="listing-column"></div>
+            <div class="listing__column" data-js="listing-column"></div>
+            <div class="listing__column" data-js="listing-column"></div>
+        </div>
+        <div class="pagination" data-js="pagination">
+
+        </div>
+    </section>
+
+    <script src="src/js/main.js" type="module"></script>
+</body>
+</html>
