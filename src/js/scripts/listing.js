@@ -1,8 +1,8 @@
 import { loadData } from './loadData.js';
 
 let config = {
-    //loadingOption: 'pagination',
-    loadingOption: 'loadmore',
+    loadingOption: 'pagination',
+    //loadingOption: 'loadmore',
     postsPerPage: 9,
     filtersDOM: document.querySelector('[data-js="filters"]'),
     listingDOM: document.querySelector('[data-js="listing"]'),
@@ -202,7 +202,7 @@ const renderListingItems = (listingItems, filters) => {
         card.classList.add('card');
 
         card.innerHTML = `
-            ${post.imageUrl ? `<img src="${post.imageUrl}" class="card__image" alt="${post.title}">` : ''}
+            ${post.imageUrl ? `<img src="${post.imageUrl}" class="card__image" alt="${post.title}" loading="lazy" width=420 height=216>` : ''}
             <span class="card__date">${post.publishedAt.substring(0, 10)}</span>
             <h2 class="card__title">${post.title}</h2>
             <p class="card__text">${post.excerpt}</p>
