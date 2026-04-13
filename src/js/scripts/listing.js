@@ -1,8 +1,8 @@
 import { loadData } from './loadData.js';
 
 let config = {
-    loadingOption: 'pagination',
-    //loadingOption: 'loadmore',
+    //loadingOption: 'pagination',
+    loadingOption: 'loadmore',
     postsPerPage: 9,
     filtersDOM: document.querySelector('[data-js="filters"]'),
     listingDOM: document.querySelector('[data-js="listing"]'),
@@ -103,7 +103,7 @@ const renderLoadMore = () => {
     }
 
     config.loadmoreDOM?.addEventListener('click', () => {
-        const loadedPostsAmount = 3;
+        const loadedPostsAmount = 6;
         config.postsPerPage += loadedPostsAmount;
         renderListingItems(posts, currentFilters);
 
