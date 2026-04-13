@@ -31,6 +31,7 @@
     display: flex;
     flex-flow: row nowrap;
     gap: 20px;
+    position: relative;
 
     .listing__column {
         display: flex;

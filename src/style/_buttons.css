@@ -1,4 +1,7 @@
 .button {
+    border: none;
+    width: fit-content;
+
     .button__icons {
         svg:nth-of-type(2) {
             opacity: 0;
@@ -12,6 +15,22 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+.button--primary {
+    background-color: var(--color-text);
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 60px;
+    padding: 14px 40px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
     }
 }
 

@@ -1,10 +1,13 @@
 import { loadData } from './loadData.js';
 
-const config = {
+let config = {
+    loadingOption: 'pagination',
+    //loadingOption: 'loadmore',
     postsPerPage: 9,
     filtersDOM: document.querySelector('[data-js="filters"]'),
     listingDOM: document.querySelector('[data-js="listing"]'),
     paginationDOM: document.querySelector('[data-js="pagination"]'),
+    loadmoreDOM: document.querySelector('[data-js="loadmore"]'),
     noResultsDOM: document.querySelector('[data-js="noresoults"]')
 }
 
@@ -90,6 +93,24 @@ const renderFilters = (listingItems) => {
     renderTagFilters([...filters.tag]);
     renderDropdownFilters('type', [...filters.type]);
     renderDropdownFilters('year', [...filters.year]);
+};
+
+const renderLoadMore = () => {
+    config.loadmoreDOM?.classList.add('active');
+
+    if (filteredPosts.length <= config.postsPerPage) {
+        config.loadmoreDOM?.classList.remove('active');
+    }
+
+    config.loadmoreDOM?.addEventListener('click', () => {
+        const loadedPostsAmount = 3;
+        config.postsPerPage += loadedPostsAmount;
+        renderListingItems(posts, currentFilters);
+
+        if (filteredPosts.length <= config.postsPerPage) {
+            config.loadmoreDOM?.classList.remove('active');
+        }
+    });
 };
 
 const renderPagination = () => {
@@ -194,7 +215,12 @@ const renderListingItems = (listingItems, filters) => {
         columnIndex = (columnIndex + 1) % columns.length;
     });
 
-    renderPagination();
+    if (config.loadingOption === 'pagination') {
+        renderPagination();
+    } else if (config.loadingOption === 'loadmore') {
+        renderLoadMore();
+    }
+    
     config.filtersDOM?.dispatchEvent(uiChange);
 };
 
