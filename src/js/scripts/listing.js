@@ -99,7 +99,7 @@ const renderPagination = () => {
     // Prev
     const prev = document.createElement('div');
     prev.classList.add('pagination__item', 'pagination__item--previous');
-    prev.textContent = '<';
+    prev.innerHTML = '<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.07123 14.4355C7.6807 14.826 7.04671 14.826 6.65619 14.4355L0.292908 8.07124C-0.0976162 7.68072 -0.0976162 7.0477 0.292908 6.65718L6.65619 0.292922C7.04671 -0.0976019 7.6807 -0.0976019 8.07123 0.292922C8.46149 0.683316 8.46129 1.31647 8.07123 1.70698L3.414 6.36421L22.5029 6.36421C23.0552 6.36421 23.5029 6.81193 23.5029 7.36421C23.5029 7.9165 23.0552 8.36421 22.5029 8.36421L3.414 8.36421L8.07123 13.0214C8.46129 13.412 8.46149 14.0451 8.07123 14.4355Z" fill="#070C1E"/></svg>';
 
     prev.addEventListener('click', () => {
         if (currentPage > 0) {
@@ -132,7 +132,7 @@ const renderPagination = () => {
     // Next
     const next = document.createElement('div');
     next.classList.add('pagination__item', 'pagination__item--next');
-    next.textContent = '>';
+    next.innerHTML = '<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4316 0.292895C15.8222 -0.0976297 16.4562 -0.0976296 16.8467 0.292895L23.21 6.65715C23.6005 7.04768 23.6005 7.68069 23.21 8.07122L16.8467 14.4355C16.4562 14.826 15.8222 14.826 15.4316 14.4355C15.0414 14.0451 15.0416 13.4119 15.4316 13.0214L20.0889 8.36418L0.999999 8.36418C0.447714 8.36418 -6.92079e-07 7.91647 -6.43797e-07 7.36418C-5.95515e-07 6.8119 0.447715 6.36418 0.999999 6.36418L20.0889 6.36418L15.4316 1.70696C15.0416 1.31644 15.0414 0.683289 15.4316 0.292895Z" fill="#070C1E"/></svg>';
 
     next.addEventListener('click', () => {
         if (currentPage < numberOfPages - 1) {
@@ -185,7 +185,7 @@ const renderListingItems = (listingItems, filters) => {
             <h2 class="card__title">${post.title}</h2>
             <p class="card__text">${post.excerpt}</p>
             <a href="#" class="button button--link">
-                Read more
+                Read more<span class="button__icons"><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.800003 12.1137L6.45686 6.45685L0.800002 0.8" stroke="#2554F0" stroke-width="1.6" stroke-linecap="round"/></svg><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.800003 12.1137L6.45686 6.45685L0.800002 0.8" stroke="#2554F0" stroke-width="1.6" stroke-linecap="round"/></svg></span>
             </a>
         `;
 
