@@ -2,6 +2,10 @@
     max-width: 1528px;
     padding: 80px 20px 100px;
     margin-inline: auto;
+
+    @media all and (max-width: 768px) {
+        padding: 40px 20px;
+    }
 }
 
 .filters {
@@ -33,6 +37,15 @@
         flex-flow: column nowrap;
         gap: 20px;
         width: calc(100% / 3);
+    }
+
+    @media all and (max-width: 768px) {
+        flex-flow: column nowrap;
+
+        .listing__column {
+            width: 100%;
+            align-items: center;
+        }
     }
 }
 
