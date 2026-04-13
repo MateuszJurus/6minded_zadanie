@@ -7,5 +7,12 @@ dropdownPlaceholders.forEach(dropdownPlaceholder => {
         dropdownPlaceholder?.classList.toggle('dropdown__placeholder--active');
         dropdownOptions?.classList.toggle('dropdown__options--active');
     });
+
+    dropdownPlaceholder.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            dropdownPlaceholder?.classList.toggle('dropdown__placeholder--active');
+            dropdownOptions?.classList.toggle('dropdown__options--active');
+        }
+    });
 });
 
