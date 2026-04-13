@@ -62,6 +62,7 @@ const renderDropdownFilters = (dataType, options) => {
     options.forEach(option => {
         const el = document.createElement('div');
         el.classList.add('dropdown__option');
+        el.setAttribute('data-js', 'dropdown-option');
         el.textContent = option;
 
         el.addEventListener('click', () => {

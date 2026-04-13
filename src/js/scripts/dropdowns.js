@@ -4,6 +4,8 @@ dropdownPlaceholders.forEach(dropdownPlaceholder => {
     const dropdownOptions = dropdownPlaceholder.parentElement.querySelector('[data-js="dropdown-options"]');
 
     dropdownPlaceholder.addEventListener('click', () => {
-        dropdownOptions.classList.toggle('dropdown__options--active');
+        dropdownPlaceholder?.classList.toggle('dropdown__placeholder--active');
+        dropdownOptions?.classList.toggle('dropdown__options--active');
     });
 });
+

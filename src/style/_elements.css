@@ -57,6 +57,12 @@
         svg {
             align-self: center;
         }
+
+        &.dropdown__placeholder--active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
     }
 
     .dropdown__options {
@@ -168,10 +174,10 @@
 
 .pagination {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 60px;
 
     .pagination__item {
         display: flex;
@@ -196,14 +202,29 @@
             background-color: var(--color-text);
             color: var(--color-white);
         }
+
+        @media all and (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+            font-size: 14px;
+            padding: 6px 10px;
+        }
     }
 
     .pagination__item--previous {
         margin-right: 20px;
+
+        @media all and (max-width: 768px) {
+            margin-right: 10px;
+        }
     }
 
     .pagination__item--next {
         margin-left: 20px;
+
+        @media all and (max-width: 768px) {
+            margin-left: 10px;
+        }
     }
 
     .pagination__item--previous,
@@ -214,6 +235,10 @@
 
     &.pagination--hidden {
         display: none;
+    }
+
+    @media all and (max-width: 768px) {
+        margin-top: 30px;
     }
 }
 
